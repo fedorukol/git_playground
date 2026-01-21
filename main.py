@@ -9,3 +9,7 @@ def main_page():
 @app.post('/')
 def main_page():
     return "Post request mock"
+
+if __name__ == "__main__":
+    app.run('0.0.0.0', 8080, debug=True)  
+
