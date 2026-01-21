@@ -1,1 +1,8 @@
-# TODO: write application here!
+from flask import Flask 
+
+app = Flask(__name__)
+
+@app.get('/')
+def main_page():
+    return "Main page mock"
+    
